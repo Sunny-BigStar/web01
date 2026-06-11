@@ -30,6 +30,26 @@
         p {
             font-size: 1.5rem;
         }
+
+        .line{
+            opacity: 0;
+
+            animation: fade 1s forwards;
+            animation-delay:calc(var(--i) * 1.2s);
+        }
+
+        .last{
+            width: 100%;
+            text-align: right;
+            padding-right: 50px;
+        }
+
+        @keyframes fade {
+
+            to{
+                opacity: 1;
+            }
+        }
         </style>
 
     </head>
@@ -37,16 +57,16 @@
 
     <body>
         <h1>서시</h1>
-        <p>죽는 날까지 하늘을 우러러</p>
-        <p>한 점 부끄럼이 없기를,</p>
-        <p>잎새에 이는 바람에도</p>
-        <p>나는 괴로워했다.</p>
-        <p>별을 노래하는 마음으로</p>
-        <p>모든 죽어가는 것을 사랑해야지</p>
-        <p>그리고 나에게 주어진 길을</p>
-        <p>걸어가야겠다.</p>    
+        <p class="line" style="--i:0";>죽는 날까지 하늘을 우러러</p>
+        <p class="line" style="--i:1";>한 점 부끄럼이 없기를,</p>
+        <p class="line" style="--i:2";>잎새에 이는 바람에도</p>
+        <p class="line" style="--i:3";>나는 괴로워했다.</p>
+        <p class="line" style="--i:4";>별을 노래하는 마음으로</p>
+        <p class="line" style="--i:5";>모든 죽어가는 것을 사랑해야지</p>
+        <p class="line" style="--i:6";>그리고 나에게 주어진 길을</p>
+        <p class="line" style="--i:7";>걸어가야겠다.</p>    
 
-        <p>오늘 밤에도 별이 바람에 스치운다.</p>
-        <p>윤동주</p>
+        <p class="line" style="--i:8";>오늘 밤에도 별이 바람에 스치운다.</p>
+        <p class="line last" style="--i:9";>윤동주</p>
     </body>
 </html>
